@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <div id = "app"></div>
+        <script src= "/js/reactjs/WelcomePresenter.js" type = "text/jsx"></script>
+        <script src= "/js/reactjs/DietPlanPresenter.js" type = "text/jsx"></script>
+        <script src= "/js/reactjs/ReceptPresenter.js" type = "text/jsx"></script>
+        <script src= "/js/reactjs/ShowPresenter.js" type = "text/jsx"></script>
+        <script src= "/js/views/promiseNoData.js" type = "text/jsx"></script>
+        <script src= "js/views/DietPlanView.js" type = "text/jsx"></script>
+        <script src= "js/views/welcomeView.js" type = "text/jsx"></script>
+        <script src= "js/views/welcomeView.js" type = "text/jsx"></script>
+        <script src= "js/views/WelcomeFormView.js" type = "text/jsx"></script>
+        <script src= "js/fitModel.js" type = "text/jsx"></script>
+        <script src= "js/fitSource.js" type = "text/jsx"></script>
+        <script src= "js/fitConfig.js" type = "text/jsx"></script>
+        <script src= "js/dietSource.js" type = "text/jsx"></script>
+        <script src= "js/calculators/calculateBMI.js" type = "text/jsx"></script>
+        <script src= "/js/app.js" type = "text/jsx"></script>
+
+
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+
+    <script type = "text/jsx">
+        const myModel = new fitModel();
+        myModel.addObserver(function(){console.log("This is an observer")});
+        ReactDOM.render(<App model = {myModel} />, document.getElementById("app"))
+    </script>
+
+</html>
