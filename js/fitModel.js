@@ -1,17 +1,22 @@
 class fitModel{
-    constructor(age, goals = "maintain weight", weight, height, gender = "male", observer = [], 
-        calories = 0, bmi = {bmi:0, health:""}, activityLevel = "level_1",){
+    constructor(age, time = 0, goals = "maintain weight", weight, height, email = "default", gender = "male", observer = [], 
+        calories = 0, bmi = {bmi:0, health:"Not set"}, activityLevel = "level_1", name = "Default", pass = "Default"){
         this.gender = gender;
+        this.name = name;
         this.observer = observer;
         this.age = age;
+        this.pass = pass;
+        this.email = email;
         this.goals = goals;
         this.weight = weight;
+        this.time = time;
         this.height = height;
         this.gender = gender;
         this.calories = calories;
         this.bmi = bmi;
         this.activityLevel = activityLevel;
     }
+
     addObserver(obs){
         this.observer = [...this.observer, obs];
     }
@@ -21,7 +26,22 @@ class fitModel{
     }
 
     notifyObservers(){
-        this.observer.forEach(ob => {try{ob()}catch(error){console.log(error)}});
+        this.observer.forEach(ob => {try{ob();}catch(error){console.log(error)}});
+    }
+
+    setName(name){
+        this.name = name;
+        this.notifyObservers();
+    }
+
+    setPass(pass){
+        this.pass = pass;
+        this.notifyObservers();
+    }
+
+    setEmail(email){
+        this.email = email;
+        this.notifyObservers();
     }
 
     setAge(a){
@@ -57,8 +77,13 @@ class fitModel{
         this.notifyObservers();
     }
 
+    setTimeFrame(x){
+        this.time = x;
+        this.notifyObservers();
+    }
+
     setCalories(c){
-        this.calories = checkGoals(c);
+        this.calories = c;
         this.notifyObservers();
     }
 
@@ -73,12 +98,12 @@ class fitModel{
         this.notifyObservers();
     }
 
-}
-
-function checkGoals(c){
-    if(myModel.goals == "maintain weight")
-        return c.goals["maintain weight"]
-    else{
-        return  c.goals[myModel.goals].calory
+    logout(){
+        this.bmi = {bmi:0, health:"Not set"};
+        this.calories = 0;
+        this.time = 0;
+        window.location.hash = "#login";
     }
+    
+
 }
