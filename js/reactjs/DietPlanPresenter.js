@@ -10,5 +10,10 @@ const DietPlanPresenter = (props) => {
     return (<div><DietPlanView 
     calories = {calories}
     />
+    <HeaderView
+
+    logout = {x => props.model.logout()}
+
+/>
     </div>)
 }

@@ -17,12 +17,18 @@ const ProfilePresenter = (props) => {
 
     return(
     <div>
+        <HeaderView
+
+        logout = {x => props.model.logout()}
+
+/>
+        
         <ProfileView
             name = {name}
             calories = {calories}
             health = {health}
             time = {time}
             logout = {x => props.model.logout()}
-        />
-    </div>)
+        />  
+</div>)
 }

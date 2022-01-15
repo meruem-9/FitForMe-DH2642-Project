@@ -1,6 +1,6 @@
 function WelcomeFormView(props){
     return(
-        <div>
+        <div className="center">
             <div>
     
                 <div className = "marginleftfloat">

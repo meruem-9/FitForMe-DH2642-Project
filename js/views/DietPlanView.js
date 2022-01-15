@@ -1,5 +1,5 @@
 function DietPlanView(props){
-    return( <div>
+    return( <div className="center">
     <div>Diet plan</div>
         <table>
             <tbody>

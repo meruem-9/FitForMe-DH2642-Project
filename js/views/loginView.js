@@ -2,7 +2,8 @@ function LoginView(props){
     var name = "default";
     var pass = "x";
     return(
-        <div>  
+        <div className="center">
+            
             <div>Username</div>
             <input placeholder = "Enter name..." type = "text" id = "loginName" onInput={(e)=> name = e.target.value} />
 
