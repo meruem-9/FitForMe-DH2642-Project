@@ -1,12 +1,14 @@
 class fitModel{
     constructor(age, time = 0, goals = "maintain weight", weight, height, email = "default", gender = "male", observer = [], 
-        calories = 0, bmi = {bmi:0, health:"Not set"}, activityLevel = "level_1", name = "Default", pass = "Default"){
+        calories = 0, kgTarget = 0, loseGain = -1, bmi = {bmi:0, health:"Not set"}, activityLevel = "level_1", name = "Default", pass = "Default"){
         this.gender = gender;
         this.name = name;
         this.observer = observer;
         this.age = age;
         this.pass = pass;
+        this.kgTarget = kgTarget;
         this.email = email;
+        this.loseGain = loseGain;
         this.goals = goals;
         this.weight = weight;
         this.time = time;
@@ -82,6 +84,11 @@ class fitModel{
         this.notifyObservers();
     }
 
+    setKgTarget(x){
+        this.kgTarget = x;
+        this.notifyObservers();
+    }
+
     setCalories(c){
         this.calories = c;
         this.notifyObservers();
@@ -89,6 +96,12 @@ class fitModel{
 
     setBmi(x){
         this.bmi = x;
+        this.notifyObservers();
+    }
+
+    setLoseGain(x){
+        this.loseGain = x;
+        DietSource.searchCalories({height:this.height, weight:this.weight, age:this.age, gender:this.gender, activitylevel:this.activityLevel});
         this.notifyObservers();
     }
 

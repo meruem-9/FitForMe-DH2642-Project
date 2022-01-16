@@ -1,4 +1,3 @@
-
 const WelcomePresenter = (props) => {
     const [age, settingAge] = React.useState(null);
     const [weight, settingWeight] = React.useState(null);
@@ -36,11 +35,6 @@ const WelcomePresenter = (props) => {
     setGoals = {x => props.model.setGoals(x)}
     setWeight = {x => props.model.setWeight(parseInt(x))}
     setLoseGain = {x => props.model.setLoseGain(x)}
-    />
-    <HeaderView
-
-        logout = {x => props.model.logout()}
-    
     />
     </div>)
 }
