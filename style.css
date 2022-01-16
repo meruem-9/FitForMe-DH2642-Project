@@ -14,7 +14,7 @@
     
 }
 
-.background{
+.background1{
   background-image: url("diana44444.jpg");
   min-height: 100%;
   min-width: 1024px;
@@ -106,4 +106,199 @@ cursor:pointer;
   height:100%;
   overflow:auto;
   }
+}
+
+/* NEEEEWW FRROMMMM HEEERRREEEE */
+
+/*    WELCOMEFORMVIEW   */
+.marginleftfloat{
+  display: flex;
+  margin: 10px;
+  height: 3%;
+  position: relative;
+}
+
+.welcomeformview{
+  position: fixed;
+  margin-left:600;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 200px;
+  border-radius: 40px;
+  
+ 
+  /*background-image: linear-gradient(to bottom, #bed6f9, #afd9f6, #a3dbf0, #9cdce6, #9bdcda);   */
+  border-radius: 15px;
+  /*opacity: 0.6; */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: rgba(100, 100, 100, 0.356);
+
+  
+
+}
+
+
+/* BACKGROUND FOR ALL VIEWS */
+.background
+{
+background-image: url(diana4k\ \(1\).jpg);
+
+/*background-image: linear-gradient(to bottom, #9fc5ff, #bfd2ff, #d9dffe, #eeeffe, #ffffff);   */ 
+
+  min-height: 100%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.background2{
+background-image: url("dian3k.jpg");
+
+min-height: 100%;
+min-width: 1024px;
+
+width: 100%;
+height: auto;
+
+position: fixed;
+top: 0;
+left: 0;
+}
+
+
+.buttonback{
+background-color: #2b2b2b70; /* Green */
+border: none;
+color: white;
+padding: 6px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 5px;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+
+
+/*    DIETPLANVIEW   */
+
+table {
+table-layout: fixed;
+width: 50%;
+border-collapse: collapse;
+background-color: rgba(100, 100, 100, 0.356);
+border-radius: 20px;
+ 
+}
+
+thead th:nth-child(1) {
+width: 10%;
+}
+
+thead th:nth-child(2) {
+width: 20%;
+}
+
+thead th:nth-child(3) {
+width: 15%;
+}
+
+thead th:nth-child(4) {
+width: 35%;
+}
+
+th, td {
+padding: 10px;
+}
+th {
+letter-spacing: 2px;
+}
+
+td {
+letter-spacing: 1px;
+}
+
+tbody td {
+text-align: center;
+}
+
+caption {
+
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: large;
+padding: 20px;
+
+color: rgb(0, 0, 0);
+text-align: center;
+letter-spacing: 1px;
+}
+
+.center1 {
+margin-left: auto;
+margin-right: auto;
+margin-top: 200px;
+}
+
+.buttondpv{
+background-color: #2b2b2b70; /* Green */
+border: none;
+color: white;
+padding: 6px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-grid;
+position: fixed;
+margin-left: 800px;
+  font-size: 16px;
+border-radius: 5px;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+margin-right: 500px;
+}
+
+
+/*   PROFILE VIEW */
+
+.profileview{
+  margin-left: 250px;
+  margin-top: 200px;
+}
+
+.left{
+margin-left: 23px
+}
+
+.left2{
+margin-left: 2px;
+}
+
+input[type="text"]
+{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+select{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 16px;
+}
+
+.goal{
+margin-left: 24px;
+}
+
+input[type="Integer"]
+{
+margin-left: auto;
+margin-right: auto;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 16px;
+
+
 }

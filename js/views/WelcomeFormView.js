@@ -1,27 +1,35 @@
 function WelcomeFormView(props){
     return(
-        <div className="center">
-            <div>
-    
+        <>
+        <div className= "background">
+            <div className="welcomeformview">
+               <div>
                 <div className = "marginleftfloat">
                     
                     <label>Age:</label>
-                    <input placeholder = "enter age... " type = "text" id = "age" onInput={(e)=>{props.setAge(e.target.value)}}/>
+                    <input className = "left" placeholder = "enter age... " type = "text" id = "age" onInput={(e)=>props.setAge(e.target.value)}/>
                     
     
                 </div>
+               
+                
                 <div className = "marginleftfloat">
                     
-                    <label>Weight:</label>
-                    <input placeholder = "enter weight..." type = "text" id = "weight" onInput={(e)=>{props.setWeight(e.target.value)}}/>
+                   <label>Weight:</label>
+                   <input placeholder = "enter weight..."  type = "text" id = "weight" onInput={(e)=>props.setWeight(e.target.value)}/>
                     
     
                 </div>
+             
+                
                 <div className = "marginleftfloat">
                     <label>Height:</label>
-                    <input placeholder = "enter height..." type = "text" id = "height" onInput={(e)=>{props.setHeight(e.target.value)}}/>
+                    <input className = "left2" placeholder = "enter height..." type = "text" id = "height" onInput={(e)=>props.setHeight(e.target.value)}/>
+                    
                 </div>
-    
+             
+               
+                </div>
     
                 <div className = "marginleftfloat">
                     <label htmlFor = "Activity levels"> Choose activity level:</label>
@@ -36,10 +44,9 @@ function WelcomeFormView(props){
                 </div>
     
     
-                <div>
-                    <label>What is your goal</label>
-                    <select id = "goal3" onChange = {e => {props.setLoseGain(parseInt(e.target.value)); props.setGoals(calculateGoals(parseInt(e.target.value) * props.kgTarget));
-                     props.setTimeFrame(calculateWeeks(parseInt(e.target.value) * props.kgTarget));}}>
+                <div className = "marginleftfloat">
+                    <label >What is your goal: </label>
+                    <select id = "goal3" onChange = {e => {goal = parseInt(e.target.value)}} className = "goal">
                     <option value = "-1">
                         Lose weight
                     </option>
@@ -50,9 +57,9 @@ function WelcomeFormView(props){
                 </div>
                 
     
-                <div>
-                    <input placeholder = "Enter kg to lose/gain..." type = "Integer" onInput= {e => {props.setKgTarget(e.target.value); props.setGoals(calculateGoals(parseInt(e.target.value) * props.loseGain));
-                     props.setTimeFrame(calculateWeeks(parseInt(e.target.value) * props.loseGain));}}>
+                <div className = "marginleftfloat">
+                    <input placeholder = "Enter kg to lose/gain..." type = "Integer" onInput= {e => {props.setGoals(calculateGoals(parseInt(e.target.value) * goal));
+                     props.setTimeFrame(calculateWeeks(parseInt(e.target.value) * goal));}}>
                     </input>
                 </div>
     
@@ -66,34 +73,31 @@ function WelcomeFormView(props){
                 </div>
     
     
-                <div>BMI = {props.bmi} this bmi is {props.health || "(waiting for data)"}</div>
-                <div>Calories per day = {props.calories || 0}</div>
-                <div>Your goal weight can be reached in {props.weeks || 0} weeks</div>
+                <div className = "marginleftfloat">BMI = {props.bmi} this bmi is {props.health || "(waiting for data)"}</div>
+                <div className = "marginleftfloat">Calories per day = {props.calories || 0}</div>
+                <div className = "marginleftfloat">Your goal weight can be reached in {props.weeks || 0} weeks</div>
                 
-                <div>
-                    <span><button onClick = { e => window.location.hash = "#profile"}>Back</button></span>
-                    
+                <div className = "buttonback">
+                    <button onClick = { e => window.location.hash = "#profile"}>Back</button>
                 </div>
             </div>
         </div>
-    
+    </>
     );
     }
-    
-    
     
     function calculateGoals(x){
         if (x == 0)
             return "maintain weight";
-        if (x < -4)
+        if (x < -8)
             return "Extreme weight loss";
-        if (x < -2)
+        if (x < -4)
             return "Weight loss";
         if (x < 0)
             return "Mild weight loss";
-        if(x > 4)
+        if(x > 8)
             return "Extreme weight gain";
-        if(x > 2)
+        if(x > 4)
             return "Weight gain";
         if(x > 0)
             return "Mild weight gain";
@@ -102,15 +106,15 @@ function WelcomeFormView(props){
     function calculateWeeks(x){
         if (x == 0)
             return 0;
-        if (x < -4)
+        if (x < -8)
             return (x/(-1)).toFixed(0);
-        if (x < -2)
+        if (x < -4)
             return  (x/(-0.5)).toFixed(0);
         if (x < 0)
             return (x/(-0.25)).toFixed(0);
-        if(x > 4)
+        if(x > 8)
             return (x/(1)).toFixed(0);
-        if(x > 2)
+        if(x > 4)
             return (x/(0.5)).toFixed(0);
         if(x > 0)
             return (x/(0.25)).toFixed(0);

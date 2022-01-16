@@ -17,11 +17,7 @@ const ProfilePresenter = (props) => {
 
     return(
     <div>
-        <HeaderView
-
-        logout = {x => props.model.logout()}
-
-/>
+       
         
         <ProfileView
             name = {name}
@@ -30,5 +26,10 @@ const ProfilePresenter = (props) => {
             time = {time}
             logout = {x => props.model.logout()}
         />  
+         <HeaderView
+
+logout = {x => props.model.logout()}
+
+/>
 </div>)
 }

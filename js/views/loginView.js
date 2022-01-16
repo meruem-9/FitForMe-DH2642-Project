@@ -2,7 +2,7 @@ function LoginView(props){
     var name = "default";
     var pass = "x";
     return(
-        <div className="background">
+        <div className="background1">
         <img src= "FFM.png" className="logo"></img>
        
         <div className="roundedCorners">
