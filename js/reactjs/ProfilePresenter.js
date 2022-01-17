@@ -24,7 +24,6 @@ const ProfilePresenter = (props) => {
             calories = {calories}
             health = {health}
             time = {time}
-            logout = {x => props.model.logout()}
         />  
          <HeaderView
 

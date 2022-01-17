@@ -36,7 +36,13 @@ const WelcomePresenter = (props) => {
     setWeight = {x => props.model.setWeight(parseInt(x))}
     setLoseGain = {x => props.model.setLoseGain(x)}
     />
-    </div>)
+    <HeaderView
+
+logout = {x => props.model.logout()}
+
+/>
+    </div>
+    )
 }
 
 
