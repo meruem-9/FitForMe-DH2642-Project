@@ -16,7 +16,6 @@ const WelcomePresenter = (props) => {
             props.model.addObserver(obs);
             return function(){props.model.removeObserver(obs)}
     } ,[])
-    
     return (<div><WelcomeFormView 
     age = {age}
     weight = {weight}
@@ -39,9 +38,9 @@ const WelcomePresenter = (props) => {
     />
     <HeaderView
 
-    logout = {x => props.model.logout()}
+logout = {x => props.model.logout()}
 
-    />
+/>
     </div>
     )
 }

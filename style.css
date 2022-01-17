@@ -52,19 +52,34 @@
   margin-left: 400px;
   margin-top: 145px;
   margin-right: 500px;
+
 }
 
 .roundedCorners3{
   border-radius: 20px;
   padding: 25px;
-  width: 270px;
-  height: 150px;
+  width: 300px;
+  height: auto;
   background-color: rgba(100, 100, 100, 0.356);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
-  margin-left: 400px;
+  margin-left: auto;
   margin-top: 145px;
-  margin-right: 500px;
+  margin-right: auto;
+
+}
+
+.roundedCorners4{
+  border-radius: 20px;
+  padding: 25px;
+  width: 600px;
+  height: auto;
+  background-color: rgba(100, 100, 100, 0.356);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 145px;
+  margin-right: auto;
 
 }
 
@@ -132,22 +147,9 @@ cursor:pointer;
 }
 
 .welcomeformview{
-  position: fixed;
-  margin-left:600;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-top: 200px;
-  border-radius: 40px;
-  
- 
-  /*background-image: linear-gradient(to bottom, #bed6f9, #afd9f6, #a3dbf0, #9cdce6, #9bdcda);   */
-  border-radius: 15px;
-  /*opacity: 0.6; */
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
-  background-color: rgba(100, 100, 100, 0.356);
-
-  
-
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
 }
 
 
@@ -256,7 +258,7 @@ letter-spacing: 1px;
 .center1 {
 margin-left: auto;
 margin-right: auto;
-margin-top: 200px;
+margin-top: 350px;
 }
 
 .buttondpv{
@@ -279,7 +281,8 @@ margin-right: 500px;
 /*   PROFILE VIEW */
 
 .profileview{
-  margin-left: 250px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 300px;
 }
 

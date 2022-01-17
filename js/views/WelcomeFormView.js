@@ -2,6 +2,7 @@ function WelcomeFormView(props){
 return(
     <div className= "background">
         <div className="welcomeformview">
+            <div className = "roundedCorners4">
         
             <div className = "marginleftfloat">
                 
@@ -69,7 +70,7 @@ return(
             <div className = "marginleftfloat">BMI = {props.bmi} this bmi is {props.health || "(waiting for data)"}</div>
             <div className = "marginleftfloat">Calories per day = {props.calories || 0}</div>
             <div className = "marginleftfloat">Your goal weight can be reached in {props.weeks || 0} weeks</div>
-            
+            </div>
         </div>
     </div>
 

@@ -1,6 +1,7 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" href="header.css"></link>
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
@@ -12,10 +13,9 @@
         <script src= "/js/reactjs/DietPlanPresenter.js" type = "text/jsx"></script>
         <script src= "/js/reactjs/ReceptPresenter.js" type = "text/jsx"></script>
         <script src= "/js/reactjs/ShowPresenter.js" type = "text/jsx"></script>
-        <script src= "/js/views/promiseNoData.js" type = "text/jsx"></script>
         <script src= "js/views/DietPlanView.js" type = "text/jsx"></script>
         <script src= "js/views/welcomeView.js" type = "text/jsx"></script>
-        <script src= "js/views/loginview.js" type = "text/jsx"></script>
+        <script src= "js/views/loginView.js" type = "text/jsx"></script>
         <script src= "js/views/profileView.js" type = "text/jsx"></script>
         <script src= "js/views/createAccView.js" type = "text/jsx"></script>
         <script src= "js/views/WelcomeFormView.js" type = "text/jsx"></script>
@@ -25,22 +25,20 @@
         <script src= "js/dietSource.js" type = "text/jsx"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
-        <script src= "/js/firebaseConfig.js" type = "text/jsx"></script>
+        <script src= "/js/firebaseconfig.js" type = "text/jsx"></script>
         <script src= "/js/firebaseModel.js" type = "text/jsx"></script>
         <script src= "js/calculators/calculateBMI.js" type = "text/jsx"></script>
         <script src= "/js/app.js" type = "text/jsx"></script>
         <script src= "js/views/HeaderView.js" type = "text/jsx"></script>
-        
-
-        
-        <link rel="stylesheet" href="header.css">
-        
+     
+   
     </head>
     <body>
         <div id="app"></div>
     </body>
 
     <script type = "text/jsx">
+        console.log("hello");
         const myModel = new fitModel();
         window.location.hash = "#login"
         persistModel(myModel);
