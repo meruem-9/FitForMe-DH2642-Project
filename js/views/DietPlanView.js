@@ -13,8 +13,6 @@ function DietPlanView(props){
                 <tr> <th scope="row">Dinner:</th>    <td> {(props.calories * 0.3).toFixed(0)} calories</td></tr>
             </tbody>
         </table>
-        <div className = "buttondpv">
-        </div>
         </div>
     </div>
     )

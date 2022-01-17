@@ -2,7 +2,7 @@ function ProfileView(props){
     return(
         <div className = "background">
            <div className = "profileview">
-            <div className="roundedCorners">
+            <div className="roundedCorners3">
             <div className = "">User: {props.name}</div>
             <div className = "">Your bmi is {(props.health || "Not calculated")}</div>
             <div className = "">Your daily calorie goal is {(props.calories || 0).toFixed(0)} calories</div>

@@ -52,6 +52,19 @@
   margin-left: 400px;
   margin-top: 145px;
   margin-right: 500px;
+}
+
+.roundedCorners3{
+  border-radius: 20px;
+  padding: 25px;
+  width: 270px;
+  height: 150px;
+  background-color: rgba(100, 100, 100, 0.356);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 145px;
+  margin-right: 500px;
 
 }
 
@@ -267,7 +280,7 @@ margin-right: 500px;
 
 .profileview{
   margin-left: 250px;
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 .left{
