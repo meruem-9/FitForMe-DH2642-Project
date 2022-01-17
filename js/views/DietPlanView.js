@@ -14,7 +14,6 @@ function DietPlanView(props){
             </tbody>
         </table>
         <div className = "buttondpv">
-    <button onClick = {e => {window.location.hash = "#profile"}}>Back</button>
         </div>
         </div>
     </div>

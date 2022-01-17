@@ -70,10 +70,6 @@ return(
             <div className = "marginleftfloat">Calories per day = {props.calories || 0}</div>
             <div className = "marginleftfloat">Your goal weight can be reached in {props.weeks || 0} weeks</div>
             
-            <div className = "buttonback">
-                <span><button onClick = { e => window.location.hash = "#profile"}>Back</button></span>
-                
-            </div>
         </div>
     </div>
 

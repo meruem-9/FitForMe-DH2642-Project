@@ -12,10 +12,10 @@ function CreateAccView(props){
         <p className="fontSize">Create account</p>
         
             <div>Username</div>
-            <input className="input2" placeholder = "Enter name..." type = "text" id = "CreateName" onInput={(e)=> name = e.target.value} />
+            <input className="input2" autocomplete="off" placeholder = "Enter name..." type = "text" id = "CreateName" onInput={(e)=> name = e.target.value} />
 
             <div>Email</div>
-            <input className="input2" placeholder = "Enter email..." type = "text" id = "CreateEmail" onInput = {(e)=> email = e.target.value}/>
+            <input className="input2" autocomplete="off" placeholder = "Enter email..." type = "text" id = "CreateEmail" onInput = {(e)=> email = e.target.value}/>
 
             <div>Password</div>
             <input className="input2" placeholder = "Enter password..." type = "password" id = "CreatePass" onInput = {(e)=> pass = e.target.value}/>
